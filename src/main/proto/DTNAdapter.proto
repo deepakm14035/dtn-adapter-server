@@ -5,7 +5,6 @@ option java_package = "edu.sjsu.dtn.adapter.communicationservice";
 
 service DTNAdapter {
   rpc saveData (AppData) returns (AppData) {}
-  rpc getData (ClientData) returns (AppData){}
   rpc prepareData (ClientData) returns (Status) {}
 }
 
@@ -15,20 +14,15 @@ message AppData {
 }
 
 message Status {
-  int32 code = 1;
-  string message = 2;
+  StatusCode code = 1;
 }
 
 enum StatusCode {
   SUCCESS = 0;
   FAIL = 1;
-  MORE_DATA_TO_SEND = 2;
+  CLIENT_NOT_REGISTERED = 2;
 }
 
 message ClientData{
-  string clientId = 1;
-}
-
-message Empty{
-
+  repeated string clientId = 1;
 }
