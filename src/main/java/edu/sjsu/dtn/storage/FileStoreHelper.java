@@ -86,10 +86,10 @@ public class FileStoreHelper {
 
     public List<byte[]> getAppData(String clientId){
         List<byte[]> appDataList = new ArrayList<>();
-        String folder = RootFolder+"/"+clientId;
+        String folder = clientId;
         Metadata metadata = getMetadata(folder);
         for(long i=metadata.lastProcessedMessageId+1;i <= metadata.lastReceivedMessageId;i++){
-            appDataList.add(readFile(folder+"/"+i+".txt"));
+            appDataList.add(readFile(RootFolder+"/"+folder+"/"+i+".txt"));
         }
         //metadata.lastProcessedMessageId= metadata.lastReceivedMessageId;
         //setMetadata(folder, metadata);

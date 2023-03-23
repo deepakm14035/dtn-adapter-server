@@ -5,6 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a1c6c5b5-cb7f-48ca-8a51-4196691ae474" name="Changes" comment="init">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileStore/receive/m.deepak/metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/FileStore/receive/m.deepak/metadata.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/sjsu/dtn/adapter/communicationservice/DTNAdapterService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/sjsu/dtn/adapter/communicationservice/DTNAdapterService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/sjsu/dtn/storage/FileStoreHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/sjsu/dtn/storage/FileStoreHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/proto/DTNAdapter.proto" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/proto/DTNAdapter.proto" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
