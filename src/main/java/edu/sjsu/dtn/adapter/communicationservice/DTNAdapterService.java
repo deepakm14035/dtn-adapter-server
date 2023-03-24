@@ -16,7 +16,7 @@ public class DTNAdapterService extends DTNAdapterGrpc.DTNAdapterImplBase{
         List<ByteString> dataListConverted = new ArrayList<>();
         System.out.println("[DTNAdapterService.saveData] data to send: ");
         for (int i=0;i<dataList.size();i++){
-            System.out.println("data: "+dataList.get(i));
+            System.out.println("data: "+ByteString.copyFrom(dataList.get(i)));
             dataListConverted.add(ByteString.copyFrom(dataList.get(i)));
         }
         //
